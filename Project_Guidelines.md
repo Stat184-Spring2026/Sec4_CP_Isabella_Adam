@@ -46,10 +46,10 @@ The following checklist provides your team with an expanded listing of all eleme
   - [x] The owner of the repo should be `Stat184-Spring2026`. 
   - [x] Make sure that each team member has access to the repo.
 - [ ] Use GitHub appropriately.
-  - [ ] Have a proper README file for the repo.
+  - [x] Have a proper README file for the repo.
   - [ ] Each member must have at least five (5) commits with appropriate subjects/messages.
   - [ ] The team should use the Issues feature regularly and appropriately.
-  - [ ] The team should use branches; there should be at least a main branch and one "dev" branch for each team member.
+  - [x] The team should use branches; there should be at least a main branch and one "dev" branch for each team member.
   - [ ] The team should appropriately use Pull Requests to merge branches; one member should make the Pull Request while another should review and approve the request.
 - [ ] Read in your data and perform any necessary data tidying, wrangling, and cleaning.
 - [ ] Conduct Exploratory Data Analysis.
