@@ -1,10 +1,11 @@
-# Project Title
+# Geographical Differences in eSports
 
-Write a 1-2 sentences that quickly and clearly convey what your repo is for.
+This is a repo for the final group project in STAT 184. It contains all the summaries, code, graphs and everything related to it.
 
 ## Overview
 
 Expand on those introductory sentences with a brief but informative description of your project's purpose and goals. This section should help visitors decide whether they should dig deeper into your repo/project.
+The analysis for this project, is based on eSports earnings, and how successful different countries are in general how geographical differences can affect someones success in different types of games. This will analyze different games and which countries are the best, and overall provide interesting insight into this data.
 
 ### Interesting Insight (Optional)
 
@@ -12,17 +13,18 @@ This is optional but highly recommended. You'll include one interesting insight 
 
 ## Data Sources and Acknowledgements
 
-Be sure to list where you got any data used within the project. Be sure to acknowledge any one whose work or elements you're drawing upon.
+All the data used in this project was sourced from https://www.esportsearnings.com/.
 
 ## Current Plan
 
-Provide some information about what you intend to do with the project. You can additionally refer the visitor to your detailed plan document.
+The overall plan with this repository, is to have a comprehensive report of all the analysis we performed on the data, all the graphs, and all the supplementary materials in one place, and properly provides everything we used to come to those conclusions. Things will be updated over time as new graphs are made and added, and overall its just meant to catalogue our entire project.
 
 ## Repo Structure
 
 Use this section to explain the structure of your repo. This should help visitors quickly figure out where they should look to find certain elements. Further, you can use this space to highlight and briefly explain important/key files in the repo.
-
+This repo will be structured in a pretty simple way. If there's supplementary materials needed like images, code, or things needed in separate files, they'll be organized into folders. All the files will labeled properly so it's easy to find all the files used, and most things will just be in the main directory
 
 ## Authors
 
-Give information about who are the authors of the project and how people can get in touch if they have questions.
+Isabella: isabella@psu.edu
+Adam: amr8818@psu.edu
