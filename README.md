@@ -4,8 +4,7 @@ This is a repo for the final group project in STAT 184. It contains all the summ
 
 ## Overview
 
-Expand on those introductory sentences with a brief but informative description of your project's purpose and goals. This section should help visitors decide whether they should dig deeper into your repo/project.
-The analysis for this project, is based on eSports earnings, and how successful different countries are in general how geographical differences can affect someones success in different types of games. This will analyze different games and which countries are the best, and overall provide interesting insight into this data.
+The analysis for this project is based on eSports earnings, and how successful different countries are in general and how geographical differences can affect someones success in different types of games. This will analyze different games and which countries are the best, and overall provide interesting insight into this data.
 
 ### Interesting Insight (Optional)
 
