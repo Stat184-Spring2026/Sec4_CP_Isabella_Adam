@@ -38,8 +38,8 @@ The following checklist provides your team with an expanded listing of all eleme
 - [x] Read through the Project Guidelines.
 - [x] Form a team with 1-2 other individuals in your section of Stat 184.
 - [x] Complete Checkpoint #1 and make a team contract.
-- [ ] Create (and update) a detailed plan for your project.
-  - [ ] Place a copy of your plan in your repo.
+- [x] Create (and update) a detailed plan for your project.
+  - [x] Place a copy of your plan in your repo.
 - [x] Brainstorm what you're interested in exploring and look for potential data sources. (See the [Data and Topics](#data-and-topics) for resources.)
 - [x] Locate appropriate data sources for your project. See the [Data Requirements](#data-requirements) section for important restrictions.
 - [x] Create a repo using the template repo. Name your repo `Sec#_CP_Name1_Name2_Name3` where `Sec#` is your section of Stat184 (i.e., `Sec1`, `Sec2`, `Sec4`, or `Sec5`) and `Name#` is replaced with the names of each team member.
@@ -48,9 +48,9 @@ The following checklist provides your team with an expanded listing of all eleme
 - [ ] Use GitHub appropriately.
   - [x] Have a proper README file for the repo.
   - [ ] Each member must have at least five (5) commits with appropriate subjects/messages.
-  - [ ] The team should use the Issues feature regularly and appropriately.
+  - [x] The team should use the Issues feature regularly and appropriately.
   - [x] The team should use branches; there should be at least a main branch and one "dev" branch for each team member.
-  - [ ] The team should appropriately use Pull Requests to merge branches; one member should make the Pull Request while another should review and approve the request.
+  - [x] The team should appropriately use Pull Requests to merge branches; one member should make the Pull Request while another should review and approve the request.
 - [ ] Read in your data and perform any necessary data tidying, wrangling, and cleaning.
 - [ ] Conduct Exploratory Data Analysis.
   - [ ] Set the stage for your analysis (i.e., prepare an introduction on your topic).
