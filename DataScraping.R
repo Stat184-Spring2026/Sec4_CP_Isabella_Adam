@@ -69,17 +69,17 @@ korea_top10 <- korea_top10 %>% mutate(Pct = Earnings / sum(Earnings) * 100)
 ggplot(china_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
   geom_col() +
   scale_fill_manual(values = game_colors) +
-  labs(title = "China - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  labs(title = "China - Top 10 Games by Earnings", x = "Figure 2", y = "% of Top 10 Earnings", fill = "Game") +
   theme_minimal()
 
 ggplot(usa_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
   geom_col() +
   scale_fill_manual(values = game_colors) +
-  labs(title = "USA - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  labs(title = "USA - Top 10 Games by Earnings", x = "Figure 3", y = "% of Top 10 Earnings", fill = "Game") +
   theme_minimal()
 
 ggplot(korea_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
   geom_col() +
   scale_fill_manual(values = game_colors) +
-  labs(title = "Korea - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  labs(title = "Korea - Top 10 Games by Earnings", x = "Figure 4", y = "% of Top 10 Earnings", fill = "Game") +
   theme_minimal()
