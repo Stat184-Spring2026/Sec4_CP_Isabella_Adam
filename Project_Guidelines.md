@@ -57,18 +57,18 @@ The following checklist provides your team with an expanded listing of all eleme
   - [x] Describe the data provenance; see See the [Data Requirements](#data-requirements) for additional information.
   - [x] Explain how the data satisfy (or not) both the FAIR and CARE principles.
   - [x] Describe what attributes you'll focus your analysis on (mention if they are part of your data sets or if you created them out of your data sets).
-  - [ ] Create multiple data visualizations (tables and figures) that assist both the team and readers in understanding the data.
-    - [ ] Data visualizations should show a variety of your skills and geometries.
-    - [ ] Each team member should be the main author behind __at least one__ professional looking table (__not__ a raw data table).
-    - [ ] Each team member should be the main author behind __at least one__ professional looking plot/graph. The plots/graphs should not all be the same kind of plot/graph.
-- [ ] Prepare a reproducible report.
+  - [x] Create multiple data visualizations (tables and figures) that assist both the team and readers in understanding the data.
+    - [x] Data visualizations should show a variety of your skills and geometries.
+    - [x] Each team member should be the main author behind __at least one__ professional looking table (__not__ a raw data table).
+    - [x] Each team member should be the main author behind __at least one__ professional looking plot/graph. The plots/graphs should not all be the same kind of plot/graph.
+- [x] Prepare a reproducible report.
   - [x] Use a QMD file; the output type is PDF.
   - [x] The report should be well organized with section headings.
   - [x] Code should __only__ be found in a Code Appendix at the end for a PDF, not in the body of your report.
   - [x] Data visualizations should be appropriately sized--not too small and not too big.
-    - [ ] Figures and Tables should have appropriate captions and appropriately cross-referenced in the body of your report.
-    - [ ] All figures should have Alt Text set.
-    - [ ] There should be narrative text helping readers to better understand what each visualization helps them to learn about the data and context.
+    - [x] Figures and Tables should have appropriate captions and appropriately cross-referenced in the body of your report.
+    - [x] All figures should have Alt Text set.
+    - [x] There should be narrative text helping readers to better understand what each visualization helps them to learn about the data and context.
   - [ ] Your report should contain narrative text (beyond explaining tables and figures) that explains the overall data story or context and helps the reader make sense of what is going on. That is, take the reader on a journey.
   - [x]  You should properly cite any work you reference (including data) according to your choice of citation style. We've included files for APA7 and MLA9 as part of this template. If you want to use a different citation style, you will need download the CSL file from the [Zotero Style Respository](https://www.zotero.org/styles/) and include it in your team's repo.
   - [x] All code should be written according to a Style Guide of your choice. List this Style Guide as a code comment in your first code chunk.
