@@ -1,7 +1,11 @@
 ---
 title: "SDR 184 Final Project: eSports Earning Analysis"
 authors: "Isabella A., Adam R."
-format: html
+format: 
+    pdf:
+      fig-pos: "H"
+      fig-height: 2
+      fig-width: 5
 editor: visual
 ---
 
@@ -22,6 +26,20 @@ Alt text: This graph is a horizontal bar graph that demonstrates the highest ear
 There's a few conclusions I've reached from this data. Firstly, a country having a bigger population has a direct correlation with how much success a country has in eSports. China, United States, Russia, And Brazil are some of the biggest countries in the world, and this makes sense because if there's more people in a country, there's going to be more people competing.
 
 # Second Analysis
+
+The second analysis I've decided to do is a stacked bar chart of the top 10 games per country, looking specifically at the top 3 countries (China, United States, Korea). I took the data from eSportsearnings, which shows top games per country.
+
+![](images/clipboard-1006556325.png){width="255"}
+
+![](images/clipboard-251021042.png){width="409"}
+
+![](images/UsaTable-03.png){width="259"}
+
+![](images/UsaGraph.png){width="433"}
+
+![](images/KoreaTable.png){fig-align="left" width="238" height="189"}
+
+![](images/KoreaGraph-02.png){width="415"}
 
 # Author Contribution
 
