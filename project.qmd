@@ -27,7 +27,7 @@ There's a few conclusions I've reached from this data. Firstly, a country having
 
 # Second Analysis
 
-The second analysis I've decided to do is a stacked bar chart of the top 10 games per country, looking specifically at the top 3 countries (China, United States, Korea). I took the data from eSportsearnings, which shows top games per country.
+The second analysis I've decided to do is a stacked bar chart of the top 10 games per country, looking specifically at the top three countries (China, United States, Korea). I took the data from eSportsearnings, which shows top games per country. I made a separate table and graph for each of the three countries.
 
 ![](images/clipboard-1006556325.png){width="255"}
 
@@ -40,6 +40,8 @@ The second analysis I've decided to do is a stacked bar chart of the top 10 game
 ![](images/KoreaTable.png){fig-align="left" width="238" height="189"}
 
 ![](images/KoreaGraph-02.png){width="415"}
+
+Alt Text: These stacked bar graphs show the differences in game preference across the three countries. In China, the eSport that has made the most money is Dota 2, which is responsible for over 30% of the total eSports earnings. Dota 2 also makes an appearance on the other two countries top 10, coming second only to Fortnite in the United States. Fortnite, which only appears on the United State graph, makes up over 30% of the country's top 10 earnings. In Korea, the most popular game is League of legends, which also makes up over 30% of the country's total earnings. It's interesting how in each of these charts, the top game makes up a very similar percentage of the total earnings (around 30%). These graphs also show some intriguing geographical differences between the three countries. For example, in China, there are five mobile games in the top 10 (PUBG Mobile, Crossfire Mobile, Identity V, League of Legends Wild Rift, and Arena of Valor), which all together make up nearly 50% of the country's total eSports earnings. In contrast, neither the United States or Korea have any mobile games in their top 10. Lastly, there are only two games that appear in all three graphs, PUBG and Dota 2, indicating the global appeal of those games.
 
 # Author Contribution
 
@@ -137,6 +139,95 @@ earnings_plot <- ggplot(
 
 cat("\n", plot_caption, "\n\n", sep = "")
 print(earnings_plot)
+```
+
+```{r}
+# Code by Adam. Reviewed by Isabella.
+library(tidyverse)
+library(rvest)
+library(knitr)
+
+china_games <- read_html("https://www.esportsearnings.com/countries/cn") %>%
+  html_nodes("table") %>% html_table(fill = TRUE) %>% .[[1]] %>%
+  mutate(Country = "China")
+
+usa_games <- read_html("https://www.esportsearnings.com/countries/us") %>%
+  html_nodes("table") %>% html_table(fill = TRUE) %>% .[[1]] %>%
+  mutate(Country = "USA")
+
+korea_games <- read_html("https://www.esportsearnings.com/countries/kr") %>%
+  html_nodes("table") %>% html_table(fill = TRUE) %>% .[[1]] %>%
+  mutate(Country = "Korea")
+
+china_top10 <- china_games %>% 
+  rename(Rank = 1, Game = `Game Name`, Earnings = `Total (Game)`) %>% 
+  mutate(Earnings = parse_number(Earnings)) %>% 
+  slice_max(Earnings, n = 10) %>% 
+  mutate(Pct = Earnings / sum(Earnings) * 100)
+
+usa_top10 <- usa_games %>% 
+  rename(Rank = 1, Game = `Game Name`, Earnings = `Total (Game)`) %>% 
+  mutate(Earnings = parse_number(Earnings)) %>% 
+  slice_max(Earnings, n = 10) %>% 
+  mutate(Pct = Earnings / sum(Earnings) * 100)
+
+korea_top10 <- korea_games %>% 
+  rename(Rank = 1, Game = `Game Name`, Earnings = `Total (Game)`) %>% 
+  mutate(Earnings = parse_number(Earnings)) %>% 
+  slice_max(Earnings, n = 10) %>% 
+  mutate(Pct = Earnings / sum(Earnings) * 100)
+
+View(china_top10 %>% select(Game, Pct) %>% arrange(desc(Pct)))
+View(korea_top10 %>% select(Game, Pct) %>% arrange(desc(Pct)))
+View(usa_top10 %>% select(Game, Pct) %>% arrange(desc(Pct)))
+
+game_colors <- c(
+  "Dota 2" = "red",
+  "Arena of Valor" = "orange",
+  "PLAYERUNKNOWN'S BATTLEGROUNDS Mobile" = "tan",
+  "League of Legends" = "green",
+  "CrossFire" = "darkred",
+  "PLAYERUNKNOWNâ\u0080\u0099S BATTLEGROUNDS" = "pink",
+  "CrossFire Mobile" = "seagreen",
+  "League of Legends: Wild Rift" = "blueviolet",
+  "Naraka: Bladepoint" = "turquoise4",
+  "Identity V" = "deepskyblue",
+  "Fortnite" = "blue",
+  "Rocket League" = "purple",
+  "Counter-Strike: Global Offensive" = "cyan",
+  "Apex Legends" = "deeppink",
+  "Rainbow Six Siege" = "grey",
+  "Call of Duty: Warzone" = "yellow",
+  "VALORANT" = "springgreen",
+  "Halo Infinite" = "magenta3",
+  "StarCraft II" = "royalblue",
+  "Overwatch" = "tomato",
+  "Overwatch 2" = "wheat4",
+  "StarCraft: Brood War" = "paleturquoise",
+  "StarCraft: Remastered" = "skyblue2",
+  "Heroes of the Storm" = "lightsalmon3"
+)
+china_top10 <- china_top10 %>% mutate(Pct = Earnings / sum(Earnings) * 100)
+usa_top10 <- usa_top10 %>% mutate(Pct = Earnings / sum(Earnings) * 100)
+korea_top10 <- korea_top10 %>% mutate(Pct = Earnings / sum(Earnings) * 100)
+
+ggplot(china_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
+  geom_col() +
+  scale_fill_manual(values = game_colors) +
+  labs(title = "China - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  theme_minimal()
+
+ggplot(usa_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
+  geom_col() +
+  scale_fill_manual(values = game_colors) +
+  labs(title = "USA - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  theme_minimal()
+
+ggplot(korea_top10, aes(x = "", y = Pct, fill = reorder(Game, Pct))) +
+  geom_col() +
+  scale_fill_manual(values = game_colors) +
+  labs(title = "Korea - Top 10 Games by Earnings", x = NULL, y = "% of Top 10 Earnings", fill = "Game") +
+  theme_minimal()
 ```
 
 # Citation
