@@ -31,7 +31,7 @@ The second analysis I've decided to do is a stacked bar chart of the top 10 game
 
 ![](images/clipboard-1006556325.png){width="255"}
 
-![](images/clipboard-251021042.png){width="409"}
+![](images/ChinaGraph2.png){width="433"}
 
 ![](images/UsaTable-03.png){width="259"}
 
@@ -41,7 +41,7 @@ The second analysis I've decided to do is a stacked bar chart of the top 10 game
 
 ![](images/KoreaGraph-02.png){width="415"}
 
-Alt Text: These stacked bar graphs show the differences in game preference across the three countries. In China, the eSport that has made the most money is Dota 2, which is responsible for over 30% of the total eSports earnings. Dota 2 also makes an appearance on the other two countries top 10, coming second only to Fortnite in the United States. Fortnite, which only appears on the United State graph, makes up over 30% of the country's top 10 earnings. In Korea, the most popular game is League of legends, which also makes up over 30% of the country's total earnings. It's interesting how in each of these charts, the top game makes up a very similar percentage of the total earnings (around 30%). These graphs also show some intriguing geographical differences between the three countries. For example, in China, there are five mobile games in the top 10 (PUBG Mobile, Crossfire Mobile, Identity V, League of Legends Wild Rift, and Arena of Valor), which all together make up nearly 50% of the country's total eSports earnings. In contrast, neither the United States or Korea have any mobile games in their top 10. Lastly, there are only two games that appear in all three graphs, PUBG and Dota 2, indicating the global appeal of those games.
+Alt Text: These stacked bar graphs show the differences in game preference across the three countries. In China, the eSport that has made the most money is Dota 2, which is responsible for over 30% of the total eSports earnings. Dota 2 also makes an appearance on the other two countries top 10, coming second only to Fortnite in the United States. Fortnite, which only appears on the United States graph, makes up over 30% of the country's top 10 earnings. In Korea, the most popular game is League of legends, which also makes up over 30% of the country's total earnings. It's interesting how in each of these charts, the top game makes up a very similar percentage of the total earnings (around 30%). These graphs also show some intriguing geographical differences between the three countries. For example, in China, there are five mobile games in the top 10 (PUBG Mobile, Crossfire Mobile, Identity V, League of Legends Wild Rift, and Arena of Valor), which all together make up nearly 50% of the country's total eSports earnings. In contrast, neither the United States or Korea have any mobile games in their top 10. Lastly, there are only two games that appear in all three graphs, PUBG and Dota 2, indicating the global appeal of those games.
 
 # Author Contribution
 
