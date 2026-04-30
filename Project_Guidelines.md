@@ -69,7 +69,7 @@ The following checklist provides your team with an expanded listing of all eleme
     - [x] Figures and Tables should have appropriate captions and appropriately cross-referenced in the body of your report.
     - [x] All figures should have Alt Text set.
     - [x] There should be narrative text helping readers to better understand what each visualization helps them to learn about the data and context.
-  - [ ] Your report should contain narrative text (beyond explaining tables and figures) that explains the overall data story or context and helps the reader make sense of what is going on. That is, take the reader on a journey.
+  - [x] Your report should contain narrative text (beyond explaining tables and figures) that explains the overall data story or context and helps the reader make sense of what is going on. That is, take the reader on a journey.
   - [x]  You should properly cite any work you reference (including data) according to your choice of citation style. We've included files for APA7 and MLA9 as part of this template. If you want to use a different citation style, you will need download the CSL file from the [Zotero Style Respository](https://www.zotero.org/styles/) and include it in your team's repo.
   - [x] All code should be written according to a Style Guide of your choice. List this Style Guide as a code comment in your first code chunk.
   - [x] All code chunks should have a Code Header that contains who the primary author of the chunk is and who reviewed the chunk.
